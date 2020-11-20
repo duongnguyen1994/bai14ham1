@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label>Fahrenheit</label>
+            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                   oninput="convertTemp(this.value)"
+                   onchange="convertTemp(this.value)">
+        </p>
+        <p>Celsius: <span id="outputCelsius"></span></p>
+        </p>
+    </form>
+    
+<script>
+    function convertTemp(temp){
+        let tempC = parseFloat((temp-32)/1.8);
+        document.getElementById('outputCelsius').innerHTML = tempC;
+    }
+</script>
+</body>
+</html>
