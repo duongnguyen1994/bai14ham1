@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Tạo và gọi hàm</title>
+</head>
+<body>
+    <script>
+        let question = confirm('Go massage')
+        let answer = processConfirm(question);
+        alert(answer);
+        function processConfirm(question){
+            let result = '';
+            if(question){
+                result = '20h tonight'
+            } else {
+                result = 'Ok, next time'
+            }
+            return result;
+        }
+    </script>
+</body>
+</html>
