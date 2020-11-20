@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Tìm giá trị nhỏ nhất của mảng</title>
+</head>
+<body>
+    <script>
+        let arr1 = [3, 5, 1, 8, -3, 7, 8];
+        let arr2 = [7, 12, 6, 9, 20, 56, 89];
+        let arr3 = [];
+        let arr4 = [0, 0, 0, 0, 0, 0];
+        function checkMin(arr){
+            if (arr.length == 0){
+                return -1;
+            }else{
+                return arr.indexOf(Math.min.apply(null, arr));
+            }         
+        }
+        document.write(`Vị trí số nhỏ nhất của mảng arr1: ${checkMin(arr1)}</br>`)
+        document.write(`Vị trí số nhỏ nhất của mảng arr2: ${checkMin(arr2)}</br>`)
+        document.write(`Vị trí số nhỏ nhất của mảng arr3: ${checkMin(arr3)}</br>`)
+        document.write(`Vị trí số nhỏ nhất của mảng arr4: ${checkMin(arr4)}</br>`)
+    </script>
+</body>
+</html>
